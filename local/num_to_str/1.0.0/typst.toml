@@ -1,0 +1,4 @@
+[package]
+name = "num_to_str"
+version = "1.0.0"
+entrypoint = "main.typ"
