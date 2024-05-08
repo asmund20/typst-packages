@@ -1,0 +1,4 @@
+[package]
+name = "rapport"
+version = "1.0.1"
+entrypoint = "main.typ"
