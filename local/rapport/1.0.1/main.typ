@@ -1,4 +1,4 @@
-#let rapport(title: "", authors: (), date: datetime.today().display("[day].[month].[year]"), language: "en", include_outline: false, abstract: none, logo:none, body) = {
+#let rapport(title: "", authors: (), date: datetime.today().display("[day].[month].[year]"), language: "en", include_outline: false, abstract: none, logo:none, title_page: false, body) = {
   // Set the document's basic properties.
   set document(author: authors, title: title)
   set page(numbering: "1", number-align: center)
@@ -20,6 +20,10 @@
     #v(3em)
     #logo
   ]
+
+  if title_page {
+    pagebreak(weak: true)
+  }
 
   set par(justify: true)
 
